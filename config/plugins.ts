@@ -7,25 +7,26 @@ export default ({ env }) => ({
   "config-sync": {
     enabled: true,
     config: {
-      syncDir: "config/sync/", // Emplacement où les fichiers de configuration seront exportés/importés
+      syncDir: "config/sync/",
       minify: false,
       importOnBootstrap: false,
-      exclude: ["core-store"], // Exclure certaines configurations si nécessaire
-      include: ["core-store.plugin_users-permissions_grant"], // Inclure des configurations spécifiques
+      exclude: ["core-store"],
+      include: ["core-store.plugin_users-permissions_grant"],
     },
   },
   graphql: {
     enabled: true,
     config: {
       endpoint: "/graphql",
-      playgroundAlways: true, // Pour activer le playground
-      introspection: true, // Pour autoriser l'introspection GraphQL
+      playgroundAlways: true,
+      introspection: true,
     },
   },
   "apollo-sandbox": {
-    enabled: process.env.NODE_ENV !== "production", // Activer en développement
+    enabled: true, // Activer Apollo Sandbox aussi bien en production qu'en développement
     config: {
-      endpoint: "http://localhost:1337/graphql", // Endpoint GraphQL
+      // Utilisation des variables d'environnement pour définir l'endpoint
+      endpoint: env("STRAPI_API_URL") + "/graphql",
     },
   },
   upload: {
