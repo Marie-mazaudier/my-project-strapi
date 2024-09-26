@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "stacks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.tags"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.button"
+    },
+    "featured_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_molecules_list_icons",
+  "info": {
+    "displayName": "list_icons",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link_text": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

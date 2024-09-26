@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_molecules_contact_infos",
+  "info": {
+    "displayName": "Contact info",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

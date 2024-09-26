@@ -1,0 +1,80 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "One page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "main_title": {
+      "type": "string",
+      "required": true,
+      "default": "Titre principal"
+    },
+    "bio": {
+      "type": "blocks",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.button"
+    },
+    "tags": {
+      "displayName": "tags",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.tags"
+    },
+    "projects_title": {
+      "type": "string"
+    },
+    "contact_title": {
+      "type": "string"
+    },
+    "contact_photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "list_icon": {
+      "displayName": "list_icons",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.list-icons"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo_contact": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

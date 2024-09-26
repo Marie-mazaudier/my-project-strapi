@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_atoms_icons",
+  "info": {
+    "displayName": "icon",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

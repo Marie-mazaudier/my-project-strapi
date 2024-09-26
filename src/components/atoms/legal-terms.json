@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_atoms_legal_terms",
+  "info": {
+    "displayName": "legal terms",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

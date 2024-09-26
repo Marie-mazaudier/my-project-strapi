@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_atoms_tags",
+  "info": {
+    "displayName": "tags",
+    "icon": "priceTag"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
