@@ -976,7 +976,6 @@ export interface ApiHomeHome extends Schema.SingleType {
     list_icon: Attribute.Component<'molecules.list-icons', true>;
     logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     logo_contact: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    slug: Attribute.UID<'api::home.home', 'main_title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
