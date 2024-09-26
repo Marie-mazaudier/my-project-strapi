@@ -1,0 +1,292 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::home.home",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "main_title",
+      "defaultSortBy": "main_title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "main_title": {
+        "edit": {
+          "label": "main_title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "main_title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "bio": {
+        "edit": {
+          "label": "bio",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bio",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "button": {
+        "edit": {
+          "label": "button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "button",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "tags": {
+        "edit": {
+          "label": "tags",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "tags",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "projects_title": {
+        "edit": {
+          "label": "projects_title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "projects_title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "contact_title": {
+        "edit": {
+          "label": "contact_title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "contact_title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "contact_photo": {
+        "edit": {
+          "label": "contact_photo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "contact_photo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "list_icon": {
+        "edit": {
+          "label": "list_icon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "list_icon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "logo": {
+        "edit": {
+          "label": "logo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "logo_contact": {
+        "edit": {
+          "label": "logo_contact",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "logo_contact",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdBy": {
+        "edit": {
+          "label": "createdBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "createdBy",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedBy": {
+        "edit": {
+          "label": "updatedBy",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true,
+          "mainField": "firstname"
+        },
+        "list": {
+          "label": "updatedBy",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "main_title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bio",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "button",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "logo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "tags",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "projects_title",
+            "size": 6
+          },
+          {
+            "name": "contact_title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "contact_photo",
+            "size": 6
+          },
+          {
+            "name": "logo_contact",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "list_icon",
+            "size": 12
+          }
+        ]
+      ],
+      "list": [
+        "id",
+        "main_title",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "uid": "api::home.home"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

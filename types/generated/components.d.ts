@@ -26,6 +26,32 @@ export interface MoleculesContactInfo extends Schema.Component {
   };
 }
 
+export interface LayoutHeader extends Schema.Component {
+  collectionName: 'components_layout_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    logo: Attribute.Component<'atoms.logo'>;
+    github: Attribute.Component<'atoms.icon'>;
+    menu: Attribute.Component<'atoms.icon'>;
+  };
+}
+
+export interface LayoutFooter extends Schema.Component {
+  collectionName: 'components_layout_footers';
+  info: {
+    displayName: 'footer';
+    icon: 'book';
+  };
+  attributes: {
+    copyright: Attribute.String;
+    links: Attribute.Component<'atoms.button', true>;
+  };
+}
+
 export interface AtomsTags extends Schema.Component {
   collectionName: 'components_atoms_tags';
   info: {
@@ -87,44 +113,18 @@ export interface AtomsButton extends Schema.Component {
   };
 }
 
-export interface LayoutHeader extends Schema.Component {
-  collectionName: 'components_layout_headers';
-  info: {
-    displayName: 'Header';
-    icon: 'layer';
-    description: '';
-  };
-  attributes: {
-    logo: Attribute.Component<'atoms.logo'>;
-    github: Attribute.Component<'atoms.icon'>;
-    menu: Attribute.Component<'atoms.icon'>;
-  };
-}
-
-export interface LayoutFooter extends Schema.Component {
-  collectionName: 'components_layout_footers';
-  info: {
-    displayName: 'footer';
-    icon: 'book';
-  };
-  attributes: {
-    copyright: Attribute.String;
-    links: Attribute.Component<'atoms.button', true>;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'molecules.list-icons': MoleculesListIcons;
       'molecules.contact-info': MoleculesContactInfo;
+      'layout.header': LayoutHeader;
+      'layout.footer': LayoutFooter;
       'atoms.tags': AtomsTags;
       'atoms.logo': AtomsLogo;
       'atoms.legal-terms': AtomsLegalTerms;
       'atoms.icon': AtomsIcon;
       'atoms.button': AtomsButton;
-      'layout.header': LayoutHeader;
-      'layout.footer': LayoutFooter;
     }
   }
 }

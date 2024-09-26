@@ -1,0 +1,78 @@
+{
+  "key": "plugin_content_manager_configuration_components::layout.footer",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "copyright",
+      "defaultSortBy": "copyright",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "copyright": {
+        "edit": {
+          "label": "copyright",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "copyright",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "links": {
+        "edit": {
+          "label": "links",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "links",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "copyright",
+        "links"
+      ],
+      "edit": [
+        [
+          {
+            "name": "copyright",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "links",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "layout.footer",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -4,6 +4,13 @@ export default ({ env }) => ({
       jwtSecret: env("JWT_SECRET"),
     },
   },
+  "config-sync": {
+    enabled: true,
+    config: {
+      // Options de configuration comme la stratégie de synchronisation
+      importOnBootstrap: true, // Pour importer les configs au démarrage
+    },
+  },
   graphql: {
     enabled: true,
     config: {
