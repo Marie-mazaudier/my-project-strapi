@@ -75,6 +75,10 @@
         "videos",
         "audios"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "main_title"
     }
   }
 }

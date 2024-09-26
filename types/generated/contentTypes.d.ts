@@ -976,6 +976,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     list_icon: Attribute.Component<'molecules.list-icons', true>;
     logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     logo_contact: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    slug: Attribute.UID<'api::home.home', 'main_title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -992,6 +993,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     singularName: 'project';
     pluralName: 'projects';
     displayName: 'Project';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1002,6 +1004,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     stacks: Attribute.Component<'atoms.tags', true>;
     button: Attribute.Component<'atoms.button'>;
     featured_image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    slug: Attribute.UID<'api::project.project', 'title'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
