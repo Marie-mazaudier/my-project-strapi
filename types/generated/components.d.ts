@@ -1,31 +1,5 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface MoleculesListIcons extends Schema.Component {
-  collectionName: 'components_molecules_list_icons';
-  info: {
-    displayName: 'list_icons';
-    icon: 'bulletList';
-  };
-  attributes: {
-    text: Attribute.String;
-    link_text: Attribute.String;
-    icon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
-}
-
-export interface MoleculesContactInfo extends Schema.Component {
-  collectionName: 'components_molecules_contact_infos';
-  info: {
-    displayName: 'Contact info';
-    icon: 'phone';
-  };
-  attributes: {
-    address: Attribute.String;
-    phone: Attribute.String;
-    email: Attribute.String;
-  };
-}
-
 export interface LayoutHeader extends Schema.Component {
   collectionName: 'components_layout_headers';
   info: {
@@ -49,6 +23,32 @@ export interface LayoutFooter extends Schema.Component {
   attributes: {
     copyright: Attribute.String;
     links: Attribute.Component<'atoms.button', true>;
+  };
+}
+
+export interface MoleculesListIcons extends Schema.Component {
+  collectionName: 'components_molecules_list_icons';
+  info: {
+    displayName: 'list_icons';
+    icon: 'bulletList';
+  };
+  attributes: {
+    text: Attribute.String;
+    link_text: Attribute.String;
+    icon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface MoleculesContactInfo extends Schema.Component {
+  collectionName: 'components_molecules_contact_infos';
+  info: {
+    displayName: 'Contact info';
+    icon: 'phone';
+  };
+  attributes: {
+    address: Attribute.String;
+    phone: Attribute.String;
+    email: Attribute.String;
   };
 }
 
@@ -116,10 +116,10 @@ export interface AtomsButton extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'molecules.list-icons': MoleculesListIcons;
-      'molecules.contact-info': MoleculesContactInfo;
       'layout.header': LayoutHeader;
       'layout.footer': LayoutFooter;
+      'molecules.list-icons': MoleculesListIcons;
+      'molecules.contact-info': MoleculesContactInfo;
       'atoms.tags': AtomsTags;
       'atoms.logo': AtomsLogo;
       'atoms.legal-terms': AtomsLegalTerms;
