@@ -36,7 +36,6 @@ export default [
             "'self'",
             "https://res.cloudinary.com", // Autoriser Cloudinary pour les médias
           ],
-          "upgrade-insecure-requests": null,
         },
       },
     },
