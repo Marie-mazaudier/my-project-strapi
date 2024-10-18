@@ -1,28 +1,18 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface LayoutHeader extends Schema.Component {
-  collectionName: 'components_layout_headers';
+export interface MoleculesSeo extends Schema.Component {
+  collectionName: 'components_molecules_seos';
   info: {
-    displayName: 'Header';
-    icon: 'layer';
-    description: '';
+    displayName: 'seo';
+    icon: 'chartPie';
   };
   attributes: {
-    logo: Attribute.Component<'atoms.logo'>;
-    github: Attribute.Component<'atoms.icon'>;
-    menu: Attribute.Component<'atoms.icon'>;
-  };
-}
-
-export interface LayoutFooter extends Schema.Component {
-  collectionName: 'components_layout_footers';
-  info: {
-    displayName: 'footer';
-    icon: 'book';
-  };
-  attributes: {
-    copyright: Attribute.String;
-    links: Attribute.Component<'atoms.button', true>;
+    meta_title: Attribute.String;
+    meta_description: Attribute.Text;
+    favicon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    img_OG: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    website_url: Attribute.String;
+    site_name: Attribute.String;
   };
 }
 
@@ -52,14 +42,54 @@ export interface MoleculesContactInfo extends Schema.Component {
   };
 }
 
+export interface LayoutHeader extends Schema.Component {
+  collectionName: 'components_layout_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'layer';
+    description: '';
+  };
+  attributes: {
+    logo: Attribute.Component<'atoms.logo'>;
+    github: Attribute.Component<'atoms.icon'>;
+    menu: Attribute.Component<'atoms.icon'>;
+    linkedin: Attribute.Component<'atoms.icon'>;
+  };
+}
+
+export interface LayoutFooter extends Schema.Component {
+  collectionName: 'components_layout_footers';
+  info: {
+    displayName: 'footer';
+    icon: 'book';
+  };
+  attributes: {
+    copyright: Attribute.String;
+    links: Attribute.Component<'atoms.button', true>;
+  };
+}
+
 export interface AtomsTags extends Schema.Component {
   collectionName: 'components_atoms_tags';
   info: {
-    displayName: 'tags';
+    displayName: 'list';
     icon: 'priceTag';
+    description: '';
   };
   attributes: {
     text: Attribute.String;
+  };
+}
+
+export interface AtomsSingleTechno extends Schema.Component {
+  collectionName: 'components_atoms_single_technos';
+  info: {
+    displayName: 'single_techno';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    percent: Attribute.Integer;
   };
 }
 
@@ -116,11 +146,13 @@ export interface AtomsButton extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'layout.header': LayoutHeader;
-      'layout.footer': LayoutFooter;
+      'molecules.seo': MoleculesSeo;
       'molecules.list-icons': MoleculesListIcons;
       'molecules.contact-info': MoleculesContactInfo;
+      'layout.header': LayoutHeader;
+      'layout.footer': LayoutFooter;
       'atoms.tags': AtomsTags;
+      'atoms.single-techno': AtomsSingleTechno;
       'atoms.logo': AtomsLogo;
       'atoms.legal-terms': AtomsLegalTerms;
       'atoms.icon': AtomsIcon;

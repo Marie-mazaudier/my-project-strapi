@@ -14,9 +14,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "stacks": {
       "type": "component",
       "repeatable": true,
@@ -41,6 +38,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "Client": {
+      "type": "string"
+    },
+    "description_project": {
+      "type": "blocks"
     }
   }
 }

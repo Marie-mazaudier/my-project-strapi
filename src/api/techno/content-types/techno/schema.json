@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technos",
+  "info": {
+    "singularName": "techno",
+    "pluralName": "technos",
+    "displayName": "Technos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "techno": {
+      "displayName": "single_techno",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.single-techno"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

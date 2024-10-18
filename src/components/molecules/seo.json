@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_molecules_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "meta_title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "favicon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img_OG": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "site_name": {
+      "type": "string"
+    }
+  }
+}

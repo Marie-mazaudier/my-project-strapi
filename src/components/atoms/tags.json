@@ -1,8 +1,9 @@
 {
   "collectionName": "components_atoms_tags",
   "info": {
-    "displayName": "tags",
-    "icon": "priceTag"
+    "displayName": "list",
+    "icon": "priceTag",
+    "description": ""
   },
   "options": {},
   "attributes": {

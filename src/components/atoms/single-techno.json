@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_atoms_single_technos",
+  "info": {
+    "displayName": "single_techno",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "percent": {
+      "type": "integer"
+    }
+  }
+}
