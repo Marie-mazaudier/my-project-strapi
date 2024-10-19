@@ -21,7 +21,8 @@
           "list_icon.link_text",
           "list_icon.icon",
           "logo",
-          "logo_contact"
+          "logo_contact",
+          "text_contact"
         ]
       },
       "conditions": []
@@ -58,7 +59,8 @@
           "list_icon.link_text",
           "list_icon.icon",
           "logo",
-          "logo_contact"
+          "logo_contact",
+          "text_contact"
         ]
       },
       "conditions": []
@@ -81,7 +83,58 @@
           "list_icon.link_text",
           "list_icon.icon",
           "logo",
-          "logo_contact"
+          "logo_contact",
+          "text_contact"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::mentions-legale.mentions-legale",
+      "properties": {
+        "fields": [
+          "text",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::mentions-legale.mentions-legale",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::mentions-legale.mentions-legale",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::mentions-legale.mentions-legale",
+      "properties": {
+        "fields": [
+          "text",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::mentions-legale.mentions-legale",
+      "properties": {
+        "fields": [
+          "text",
+          "title"
         ]
       },
       "conditions": []
@@ -93,11 +146,13 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "stacks.text",
           "button.text",
           "button.link",
-          "featured_image"
+          "featured_image",
+          "slug",
+          "Client",
+          "description_project"
         ]
       },
       "conditions": []
@@ -123,11 +178,13 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "stacks.text",
           "button.text",
           "button.link",
-          "featured_image"
+          "featured_image",
+          "slug",
+          "Client",
+          "description_project"
         ]
       },
       "conditions": []
@@ -139,11 +196,13 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "stacks.text",
           "button.text",
           "button.link",
-          "featured_image"
+          "featured_image",
+          "slug",
+          "Client",
+          "description_project"
         ]
       },
       "conditions": []
@@ -164,11 +223,19 @@
           "header.github.link",
           "header.menu.icon",
           "header.menu.link",
+          "header.linkedin.icon",
+          "header.linkedin.link",
           "logo.image",
           "logo.link",
           "footer.copyright",
           "footer.links.text",
-          "footer.links.link"
+          "footer.links.link",
+          "seo.meta_title",
+          "seo.meta_description",
+          "seo.favicon",
+          "seo.img_OG",
+          "seo.website_url",
+          "seo.site_name"
         ]
       },
       "conditions": []
@@ -203,11 +270,19 @@
           "header.github.link",
           "header.menu.icon",
           "header.menu.link",
+          "header.linkedin.icon",
+          "header.linkedin.link",
           "logo.image",
           "logo.link",
           "footer.copyright",
           "footer.links.text",
-          "footer.links.link"
+          "footer.links.link",
+          "seo.meta_title",
+          "seo.meta_description",
+          "seo.favicon",
+          "seo.img_OG",
+          "seo.website_url",
+          "seo.site_name"
         ]
       },
       "conditions": []
@@ -228,11 +303,125 @@
           "header.github.link",
           "header.menu.icon",
           "header.menu.link",
+          "header.linkedin.icon",
+          "header.linkedin.link",
           "logo.image",
           "logo.link",
           "footer.copyright",
           "footer.links.text",
-          "footer.links.link"
+          "footer.links.link",
+          "seo.meta_title",
+          "seo.meta_description",
+          "seo.favicon",
+          "seo.img_OG",
+          "seo.website_url",
+          "seo.site_name"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "fields": [
+          "title",
+          "subtitle",
+          "techno"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "fields": [
+          "title",
+          "subtitle",
+          "techno"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::skill.skill",
+      "properties": {
+        "fields": [
+          "title",
+          "subtitle",
+          "techno"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::techno.techno",
+      "properties": {
+        "fields": [
+          "techno.name",
+          "techno.percent",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::techno.techno",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::techno.techno",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::techno.techno",
+      "properties": {
+        "fields": [
+          "techno.name",
+          "techno.percent",
+          "title"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::techno.techno",
+      "properties": {
+        "fields": [
+          "techno.name",
+          "techno.percent",
+          "title"
         ]
       },
       "conditions": []
@@ -577,6 +766,20 @@
     },
     {
       "action": "plugin::email.settings.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::import-export-entries.export",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::import-export-entries.import",
       "actionParameters": {},
       "subject": null,
       "properties": {},

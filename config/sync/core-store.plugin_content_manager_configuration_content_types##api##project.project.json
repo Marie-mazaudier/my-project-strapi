@@ -33,20 +33,6 @@
           "sortable": true
         }
       },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "stacks": {
         "edit": {
           "label": "stacks",
@@ -85,6 +71,48 @@
         },
         "list": {
           "label": "featured_image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Client": {
+        "edit": {
+          "label": "Client",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Client",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description_project": {
+        "edit": {
+          "label": "description_project",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description_project",
           "searchable": false,
           "sortable": false
         }
@@ -152,17 +180,12 @@
       "list": [
         "id",
         "title",
-        "description",
         "stacks"
       ],
       "edit": [
         [
           {
             "name": "title",
-            "size": 6
-          },
-          {
-            "name": "description",
             "size": 6
           }
         ],
@@ -182,6 +205,22 @@
           {
             "name": "featured_image",
             "size": 6
+          },
+          {
+            "name": "slug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Client",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description_project",
+            "size": 12
           }
         ]
       ]

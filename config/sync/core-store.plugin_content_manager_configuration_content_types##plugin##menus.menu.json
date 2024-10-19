@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::site-setting.site-setting",
+  "key": "plugin_content_manager_configuration_content_types::plugin::menus.menu",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "site_name",
-      "defaultSortBy": "site_name",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,86 +19,45 @@
           "sortable": true
         }
       },
-      "site_name": {
+      "title": {
         "edit": {
-          "label": "site_name",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "site_name",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "contact_info": {
+      "slug": {
         "edit": {
-          "label": "contact_info",
+          "label": "slug",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "contact_info",
-          "searchable": false,
-          "sortable": false
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
         }
       },
-      "header": {
+      "items": {
         "edit": {
-          "label": "header",
+          "label": "items",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "title"
         },
         "list": {
-          "label": "header",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "logo": {
-        "edit": {
-          "label": "logo",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "logo",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "footer": {
-        "edit": {
-          "label": "footer",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "footer",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "seo": {
-        "edit": {
-          "label": "seo",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "seo",
+          "label": "items",
           "searchable": false,
           "sortable": false
         }
@@ -165,50 +124,30 @@
     "layouts": {
       "list": [
         "id",
-        "site_name",
-        "logo",
-        "contact_info"
+        "title",
+        "slug",
+        "items"
       ],
       "edit": [
         [
           {
-            "name": "site_name",
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "slug",
             "size": 6
           }
         ],
         [
           {
-            "name": "contact_info",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "header",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "logo",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "footer",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "seo",
-            "size": 12
+            "name": "items",
+            "size": 6
           }
         ]
       ]
     },
-    "uid": "api::site-setting.site-setting"
+    "uid": "plugin::menus.menu"
   },
   "type": "object",
   "environment": null,

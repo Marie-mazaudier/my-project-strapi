@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::site-setting.site-setting",
+  "key": "plugin_content_manager_configuration_content_types::api::skill.skill",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "site_name",
-      "defaultSortBy": "site_name",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,88 +19,47 @@
           "sortable": true
         }
       },
-      "site_name": {
+      "title": {
         "edit": {
-          "label": "site_name",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "site_name",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "contact_info": {
+      "subtitle": {
         "edit": {
-          "label": "contact_info",
+          "label": "subtitle",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "contact_info",
-          "searchable": false,
-          "sortable": false
+          "label": "subtitle",
+          "searchable": true,
+          "sortable": true
         }
       },
-      "header": {
+      "techno": {
         "edit": {
-          "label": "header",
+          "label": "techno",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true
+          "editable": true,
+          "mainField": "title"
         },
         "list": {
-          "label": "header",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "logo": {
-        "edit": {
-          "label": "logo",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "logo",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "footer": {
-        "edit": {
-          "label": "footer",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "footer",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "seo": {
-        "edit": {
-          "label": "seo",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "seo",
-          "searchable": false,
-          "sortable": false
+          "label": "techno",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -165,50 +124,30 @@
     "layouts": {
       "list": [
         "id",
-        "site_name",
-        "logo",
-        "contact_info"
+        "title",
+        "createdAt",
+        "subtitle"
       ],
       "edit": [
         [
           {
-            "name": "site_name",
+            "name": "title",
+            "size": 6
+          },
+          {
+            "name": "subtitle",
             "size": 6
           }
         ],
         [
           {
-            "name": "contact_info",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "header",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "logo",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "footer",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "seo",
-            "size": 12
+            "name": "techno",
+            "size": 6
           }
         ]
       ]
     },
-    "uid": "api::site-setting.site-setting"
+    "uid": "api::skill.skill"
   },
   "type": "object",
   "environment": null,

@@ -1,0 +1,153 @@
+{
+  "key": "plugin_content_manager_configuration_components::molecules.seo",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "meta_title",
+      "defaultSortBy": "meta_title",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "meta_title": {
+        "edit": {
+          "label": "meta_title",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "meta_title",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "meta_description": {
+        "edit": {
+          "label": "meta_description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "meta_description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "favicon": {
+        "edit": {
+          "label": "favicon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "favicon",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "img_OG": {
+        "edit": {
+          "label": "img_OG",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "img_OG",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "website_url": {
+        "edit": {
+          "label": "website_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "website_url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "site_name": {
+        "edit": {
+          "label": "site_name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "site_name",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "meta_title",
+        "meta_description",
+        "favicon"
+      ],
+      "edit": [
+        [
+          {
+            "name": "meta_title",
+            "size": 6
+          },
+          {
+            "name": "meta_description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "favicon",
+            "size": 6
+          },
+          {
+            "name": "img_OG",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "website_url",
+            "size": 6
+          },
+          {
+            "name": "site_name",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "molecules.seo",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

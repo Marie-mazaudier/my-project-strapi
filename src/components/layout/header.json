@@ -27,6 +27,11 @@
       "type": "component",
       "repeatable": false,
       "component": "atoms.icon"
+    },
+    "malt": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.list-icons"
     }
   }
 }

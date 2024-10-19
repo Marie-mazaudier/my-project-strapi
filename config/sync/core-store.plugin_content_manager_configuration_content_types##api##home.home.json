@@ -159,6 +159,20 @@
           "sortable": false
         }
       },
+      "text_contact": {
+        "edit": {
+          "label": "text_contact",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "text_contact",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -262,9 +276,15 @@
         ],
         [
           {
-            "name": "contact_photo",
+            "name": "text_contact",
             "size": 6
           },
+          {
+            "name": "contact_photo",
+            "size": 6
+          }
+        ],
+        [
           {
             "name": "logo_contact",
             "size": 6

@@ -7,13 +7,46 @@
       "action": "api::home.home.find"
     },
     {
+      "action": "api::mentions-legale.mentions-legale.find"
+    },
+    {
       "action": "api::project.project.find"
     },
     {
       "action": "api::site-setting.site-setting.find"
     },
     {
+      "action": "api::skill.skill.find"
+    },
+    {
+      "action": "api::skill.skill.findOne"
+    },
+    {
+      "action": "api::techno.techno.find"
+    },
+    {
+      "action": "api::techno.techno.findOne"
+    },
+    {
+      "action": "plugin::menus.menu-item.find"
+    },
+    {
+      "action": "plugin::menus.menu-item.findOne"
+    },
+    {
+      "action": "plugin::menus.menu.find"
+    },
+    {
+      "action": "plugin::menus.menu.findOne"
+    },
+    {
       "action": "plugin::navigation.client.readAll"
+    },
+    {
+      "action": "plugin::navigation.client.render"
+    },
+    {
+      "action": "plugin::navigation.client.renderChild"
     },
     {
       "action": "plugin::users-permissions.auth.callback"

@@ -60,6 +60,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "linkedin": {
+        "edit": {
+          "label": "linkedin",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "linkedin",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -85,6 +99,12 @@
         [
           {
             "name": "menu",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "linkedin",
             "size": 12
           }
         ]

@@ -2,10 +2,7 @@
   "key": "plugin_navigation_config",
   "value": {
     "additionalFields": [],
-    "contentTypes": [
-      "api::home.home",
-      "api::project.project"
-    ],
+    "contentTypes": [],
     "contentTypesNameFields": {
       "default": [
         "title",
@@ -16,10 +13,7 @@
     "contentTypesPopulate": {},
     "allowedLevels": 2,
     "gql": {
-      "navigationItemRelated": [
-        "Home",
-        "Project"
-      ]
+      "navigationItemRelated": []
     },
     "i18nEnabled": false,
     "pruneObsoleteI18nNavigations": false,

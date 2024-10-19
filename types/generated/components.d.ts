@@ -54,6 +54,7 @@ export interface LayoutHeader extends Schema.Component {
     github: Attribute.Component<'atoms.icon'>;
     menu: Attribute.Component<'atoms.icon'>;
     linkedin: Attribute.Component<'atoms.icon'>;
+    malt: Attribute.Component<'molecules.list-icons', true>;
   };
 }
 
