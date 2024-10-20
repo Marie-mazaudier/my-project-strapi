@@ -30,7 +30,7 @@
     },
     "malt": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "molecules.list-icons"
     }
   }
