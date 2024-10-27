@@ -1135,6 +1135,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     slug: Attribute.UID<'api::project.project', 'title'>;
     Client: Attribute.String;
     description_project: Attribute.Blocks;
+    site_category: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

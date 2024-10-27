@@ -44,6 +44,9 @@
     },
     "description_project": {
       "type": "blocks"
+    },
+    "site_category": {
+      "type": "string"
     }
   }
 }
